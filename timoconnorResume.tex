@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Timothy O'Connor
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{multicol}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+        \textbf{\Huge \scshape Timothy O'Connor} \\ \vspace{1pt}
+        \small 201-815-3901 $|$ \href{mailto:x@x.com}{\underline{tjo45@miami.edu}} $|$ 
+        \href{https://www.linkedin.com/in/timothy-o-connor-a17223198/...}{\underline{https://www.linkedin.com/in}} $|$
+        \href{https://github.com/timoconnnor...}{\underline{https://github.com}} $|$
+        \href{https://tim-oconnor.com/}{\underline{https://tim-oconnor.com/}}
+    \end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Miami}{Coral Gables, FL}
+      {Bachelors in Quantitative Economics, Minors in Computer Science and Finance}{Aug. 2019 -- December 2023} 
+
+    \vspace{10pt} % Adjust the value to control the amount of space
+
+    \textbf{Relevant Coursework:}
+      \begin{multicols}{2}
+        \begin{itemize}
+          \item Android Programming
+          \item Data Structures and Algorithms
+          \item Intro to Programming
+          \item Mathematical Applications in Economics
+          \item Advanced Macroeconomics
+          \item Advanced Econometrics
+        \end{itemize}
+      \end{multicols}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Development and Finance Intern}{June 2021 -- August 2021}
+      {Effectual Inc.}{Jersey City, NJ}
+      \resumeItemListStart
+        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Google Student Developer Club Member}{August 2019 -- Present}
+      {University of Miami}{Coral Gables}
+      \resumeItemListStart
+        \resumeItem{Participated in various coding and development activities organized by the club}
+        \resumeItem{Collaborated with fellow students on projects and coding challenges}
+        \resumeItem{Attended workshops and events to enhance coding skills and knowledge}
+      \resumeItemListEnd
+      
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Simple Search Engine} $|$ \emph{Java}}{May 2023}
+        \resumeItemListStart
+          \resumeItem{Developed a search engine using all the structures and algorithms learned in class.}
+          \resumeItem{Implemented efficient data structures for indexing and retrieval.}
+          \resumeItem{Optimized search algorithms for faster query processing.}
+          \resumeItem{Collaborated with team members to ensure smooth integration of features.}
+\resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{NFL Machine Learning Sports Prediction} $|$ \emph{Python}}{August 2023 -- Present}
+\resumeItemListStart
+  \resumeItem{Designed and implemented a machine learning-based sports prediction system for NFL games.}
+  \resumeItem{Objective: To outperform traditional predictions using algorithms and data analysis.}
+  \resumeItem{Step-By-Step Breakdown:}
+  \resumeItemListStart
+    \resumeItem{Data Collection: Gathered historical NFL game data, including detailed statistics, team information, and game results. Utilized a web scraper for data extraction from pro football reference.}
+    \resumeItem{Data Analysis: Employed machine learning algorithms to analyze the collected data and identify patterns.}
+    \resumeItem{Model Training: Developed and trained predictive models using the processed data.}
+    \resumeItem{Evaluation: Assessed the performance of the models through testing and validation processes.}
+    \resumeItem{Iterative Improvement: Continuously refined the models based on feedback and updated data.}
+  \resumeItemListEnd
+\resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Hackathon Project - Water Consumption Tracker} $|$ \emph{Python}}{April 2023}
+        \resumeItemListStart
+          \resumeItem{Developed an innovative application during a hackathon to track water consumption based on the food consumed}
+          \resumeItem{Utilized OpenAI's API to analyze food data and determine the corresponding water usage}
+          \resumeItem{Designed and implemented a user-friendly website for deploying the application}
+          \resumeItem{Collaborated with a team to integrate backend functionality and ensure seamless user experience}
+          \resumeItem{Presented the project to judges and received positive feedback on its creativity and environmental impact}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, JavaScript, Python, R, CSS, HTML} \\
+     \textbf{Frameworks}{: React, Git, Linux} \\
+     \textbf{Developer Tools}{: Git, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib} \\
+     \textbf{Document Preparation:} LaTeX
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
