@@ -2,6 +2,6 @@
 
 # Preview
 
-![Alt Text](./timoconnorResume.jpg)
+![Alt Text](./timoconnorResume.jpeg)
 
 
